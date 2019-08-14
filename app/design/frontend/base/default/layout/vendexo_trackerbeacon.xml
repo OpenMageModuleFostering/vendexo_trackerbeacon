@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+  <checkout_onepage_success>
+    <reference name="before_body_end">
+      <block type="vendexo_trackerbeacon/beacon"
+        name="vendexo_trackerbeacon_beacon"
+        template="vendexo_trackerbeacon/beacon.phtml" />
+    </reference>
+  </checkout_onepage_success>
+</layout>

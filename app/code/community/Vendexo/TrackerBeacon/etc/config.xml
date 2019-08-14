@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <modules>
+    <Vendexo_TrackerBeacon>
+      <version>1.0.0</version>
+    </Vendexo_TrackerBeacon>
+  </modules>
+  <global>
+    <blocks>
+      <vendexo_trackerbeacon>
+        <class>Vendexo_TrackerBeacon_Block</class>
+      </vendexo_trackerbeacon>
+    </blocks>
+  </global>
+  <frontend>
+    <layout>
+      <updates>
+        <vendexo_trackerbeacon module="Vendexo_TrackerBeacon">
+          <file>vendexo_trackerbeacon.xml</file>
+        </vendexo_trackerbeacon>
+      </updates>
+    </layout>
+  </frontend>
+</config>

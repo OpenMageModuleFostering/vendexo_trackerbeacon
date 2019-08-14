@@ -1,0 +1,29 @@
+<!-- begin Vendexo Affiliate Network tracking -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  (function() {
+    var lOrderRef = encodeURIComponent("<?php echo($this->getOrderId()); ?>");
+    var lAmount = "<?php echo($this->getOrderAmount()); ?>";
+    // If this contains a currency symbol or thousands separator add code to remove them.
+    lAmount = lAmount.replace(/,/g, '');
+    var lCurrency = "<?php echo($this->getCurrencyCode()); ?>";             // Or specify an empty string to use shop's native currency.
+    var lVersion = "v1";
+    var lShopCode = "<?php echo($this->getShopCode()); ?>";
+    var lVxTCode = "<?php echo($this->getVxtCode()); ?>";
+    var lProtocol;
+    if (window.location.protocol.toLowerCase() == 'https:') {
+        lProtocol = 'https:';
+    } else {
+        lProtocol = 'http:';
+    }
+    var lUrl = lProtocol + "//track.vendexo.com/aff/track/sale/" + lVersion + "/js/" + lShopCode + "/" + lVxTCode + "/?orderRef=" + lOrderRef + "&amp;amount=" + lAmount;
+    if (lCurrency) {
+        lUrl += '&amp;currency=' + lCurrency;
+    }
+    document.write('<scr' + 'ipt type="text/javascript" src="' + lUrl + '"></scr' + 'ipt>');
+  })();
+  /* ]]> */
+</script>
+<noscript><img src="http://track.vendexo.com/aff/track/sale/v1/img/<?php echo($this->getShopCode()); ?>/<?php echo($this->getVxtCode()); ?>/?orderRef=<?php echo($this->getOrderId()); ?>&amp;amount=<?php echo($this->getOrderAmount()); ?>&amp;currency=<?php echo($this->getCurrencyCode()); ?>" alt="." /></noscript>
+<!-- end Vendexo Affiliate Network tracking -->
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <sections>
+    <sales_affiliate_networks translate="label" module="sales">
+      <label>Affiliate Networks</label>
+      <tab>sales</tab>
+      <frontend_type>text</frontend_type>
+      <sort_order>10001</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>0</show_in_store>
+      <groups>
+        <vendexo translate="label">
+          <label>Vendexo Affiliate Network</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>0</show_in_store>
+          <fields>
+            <affiliate_program_code translate="label">
+              <label>Affiliate program id code</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>50</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </affiliate_program_code>
+            <vxt_code translate="label">
+              <label>Vxt Code</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>60</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+            </vxt_code>
+          </fields>
+        </vendexo>
+      </groups>
+    </sales_affiliate_networks>
+  </sections>
+</config>
+
