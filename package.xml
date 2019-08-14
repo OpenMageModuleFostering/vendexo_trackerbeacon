@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Vendexo_TrackerBeacon</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="https://gnu.org/licenses/gpl.html">GNU GPL version 3</license>
     <channel>community</channel>
     <extends/>
-    <summary>This enables the merchant to have an affiliate program with vendexo.com to help get extra visitors to their online shop.</summary>
-    <description>This places a beacon-type tracker on the onepage_success page. If the buyer was referred via the Vendexo.com Affiliate Network, this enables the vendexo.com software to pay a sales commission to the affiliate who referred the customer to the merchant's shop.</description>
-    <notes>First release.</notes>
+    <summary>This enables merchants to have an affiliate program with Vendexo to help get extra visitors to their shop.</summary>
+    <description>This places a beacon-type tracker on the page shown after successful payment at the end of the checkout. If the buyer was referred via the Vendexo Affiliate Network, this enables the vendexo.com software to pay a sales commission to the affiliate who referred the customer to the merchant's shop. After installation it is necessary to clear the Magento cache via the admin control panel System-&gt;Cache Management-&gt;Flush Magento Cache. You will also have to log out of the admin control panel and log back in again in order to configure the tracker settings.</description>
+    <notes>This release fixes a problem seen on Linux hosts with the previous version (1.0.0) whereby an exception is raised due to a block being invalid. This is because the file name for the block "beacon.php" should have been named "Beacon.php" in the directory app/code/community/Vendexo/TrackerBeacon/Block.</notes>
     <authors><author><name>Stephen Brooks</name><user>smbrooks</user><email>s.brooks@vendexo.com</email></author></authors>
-    <date>2013-08-02</date>
-    <time>19:42:35</time>
-    <contents><target name="magecommunity"><dir name="Vendexo"><dir name="TrackerBeacon"><dir name="Block"><file name="beacon.php" hash="dd5676ffb84dbc41fcbb7037df8b8111"/></dir><dir name="etc"><file name="adminhtml.xml" hash="fd4480d9a9919fef7ab8614929a5f78f"/><file name="config.xml" hash="c8e4b3b572a1d05e792fb83940198a8a"/><file name="system.xml" hash="f29b13d986934819890b83e2fe0275df"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="vendexo_trackerbeacon.xml" hash="151393bf702771fa556984c93c80fa47"/></dir><dir name="template"><dir name="vendexo_trackerbeacon"><file name="beacon.phtml" hash="b415a9135a9a86ffcdfd7f6af5ea9167"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Vendexo_TrackerBeacon.xml" hash="dc9917c450f7240b2bb41d0f781c6b82"/></dir></target></contents>
+    <date>2015-10-14</date>
+    <time>17:26:21</time>
+    <contents><target name="magecommunity"><dir name="Vendexo"><dir name="TrackerBeacon"><dir name="Block"><file name="Beacon.php" hash="dd5676ffb84dbc41fcbb7037df8b8111"/></dir><dir name="etc"><file name="adminhtml.xml" hash="fd4480d9a9919fef7ab8614929a5f78f"/><file name="config.xml" hash="99659c2543e4790c145411d0e1d7790b"/><file name="system.xml" hash="f29b13d986934819890b83e2fe0275df"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="vendexo_trackerbeacon.xml" hash="151393bf702771fa556984c93c80fa47"/></dir><dir name="template"><dir name="vendexo_trackerbeacon"><file name="beacon.phtml" hash="b415a9135a9a86ffcdfd7f6af5ea9167"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Vendexo_TrackerBeacon.xml" hash="87e366ba6dc4f83e9486e3ce1f37e820"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.0.0</min><max>10.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

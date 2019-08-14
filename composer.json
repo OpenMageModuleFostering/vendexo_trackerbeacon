@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "GNU-GPL-version-3",
     "homepage": "",
-    "description": "This enables the merchant to have an affiliate program with vendexo.com to help get extra visitors to their online shop.",
+    "description": "This enables merchants to have an affiliate program with Vendexo to help get extra visitors to their shop.",
     "authors": [
     {
         "name": "Stephen Brooks",
