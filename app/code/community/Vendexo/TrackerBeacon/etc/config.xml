@@ -2,7 +2,7 @@
 <config>
   <modules>
     <Vendexo_TrackerBeacon>
-      <version>1.0.1</version>
+      <version>1.1.0</version>
     </Vendexo_TrackerBeacon>
   </modules>
   <global>
@@ -11,8 +11,22 @@
         <class>Vendexo_TrackerBeacon_Block</class>
       </vendexo_trackerbeacon>
     </blocks>
+    <helpers>
+      <vendexo_trackerbeacon>
+        <class>Vendexo_TrackerBeacon_Helper</class>
+      </vendexo_trackerbeacon>
+    </helpers>
   </global>
   <frontend>
+    <routers>
+      <trackerbeacon>
+        <use>standard</use>
+        <args>
+          <module>Vendexo_TrackerBeacon</module>
+          <frontName>vendexoaffiliates</frontName>
+        </args>
+      </trackerbeacon>
+    </routers>
     <layout>
       <updates>
         <vendexo_trackerbeacon module="Vendexo_TrackerBeacon">
