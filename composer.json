@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Vendexo_TrackerBeacon",
+    "name": "OpenMageModuleFostering\/Vendexo_TrackerBeacon",
     "type": "magento-module",
     "license": "Apache-2.0",
     "homepage": "",
     "description": "This enables merchants to have an affiliate program with Vendexo to help get extra visitors to their shop.",
     "authors": [
-    {
-        "name": "S. Brooks",
-        "email": "s.brooks@vendexo.com"
-    }
-],
+        {
+            "name": "S. Brooks",
+            "email": "s.brooks@vendexo.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
